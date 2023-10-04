@@ -19,16 +19,14 @@ và thay thế các ký tự này bởi ký tự ( _ ) <br>
     for (let i = 0; i < x; i++) {
         arr[i] = prompt("Nhap phan tu a" + i);
     }
+    
     document.write('Before arr is ' + arr.join(' ') + '<br>');
     for (let i = 0; i < x; i++) {
         if (arr[i] === '-') {
             arr[i] = '_';
         } else {
-            for (let j = 0; j < arr[i]; j++) {
-                if (arr[i][j] === '-') {
-                    arr[i][j] = '_';
-                }
-            }
+            arr[i] = arr[i].replace(/-/g, '_');
+
         }
     }
     document.write('After arr is ' + arr.join(' ') + '<br>');
