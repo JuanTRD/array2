@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BT4-2</title>
+</head>
+<body>
+<script>
+    let x = prompt("Nhập chuỗi: ");
+    let count = 0;
+    document.write("chuỗi ban đầu là :" + "'" + x + "'" + "<br>");
+    for (let i = 0; i < x.length; i++) {
+        if (x[0] == " ") {
+            if (x[x.length - 1] == " ") {
+                if (x[i] == " ") {
+                    count++;
+                }
+                document.write("Số từ trong chuỗi: " + (count - 1) + "<br>");
+            } else {
+                if (x[i] == " ") {
+                    count++;
+                }
+                document.write("Số từ trong chuỗi: " + (count) + "<br>");
+            }
+        } else {
+            if (x[x.length - 1] == " ") {
+                if (x[i] == " ") {
+                    count++;
+                }
+                document.write("Số từ trong chuỗi: " + (count - 1) + "<br>");
+            } else {
+                if (x[i] == " ") {
+                    count++;
+                }
+                document.write("Số từ trong chuỗi: " + (count + 1) + "<br>");
+            }
+        }
+    }
+
+</script>
+</body>
+</html>

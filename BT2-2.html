@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BT2-2</title>
+</head>
+<body>
+Bài 2: Viết một chương trình để in các ký tự trong một mảng theo thứ tự đảo ngược. <br>
+Ví dụ, nếu một mảng chứa các ký tự  [ 'c', 's', 'c', '2', '6', '1' ] sau khi thực hiện đảo ngược sẽ là "162csc"
+<script>
+    let a = [];
+    let x = prompt("Nhập số phần tử: ");
+    for (let i = 0; i < x; i++) {
+        a[i] = prompt("nhập số thứ " + i);
+    }
+    document.write("Before reverse :" + a + "<br />");
+    const b = a;
+    document.write("không dùng hàm" + "<br />");
+    let first = 0;
+    let last = a.length - 1;
+    while (first < last) {
+        let temp = a[first];
+        a[first] = a[last];
+        a[last] = temp;
+        first++;
+        last--;
+    }
+    document.write("After reverse :" + a + "<br />");
+    document.write("Dùng hàm" + "<br />");
+    a.reverse();
+    b.reverse()
+    document.write("After reverse :" + b + "<br />");
+
+</script>
+</body>
+</html>

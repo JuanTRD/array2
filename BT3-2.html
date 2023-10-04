@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BT3-2</title>
+</head>
+<body>
+Bài 3: Viết một chương trình khai báo một mảng ký tự và kích thước của mảng. <br>
+Chương trình này đếm số ký tự số trong mảng.<br>
+<script>
+  let a = [];
+
+  let x = prompt("Nhập số phần tử: ");
+  for (let i = 0; i < x; i++) {
+    a[i] = prompt("nhập số thứ " + i);
+  }
+  document.write("Before :" + a + "<br />");
+
+  document.write("Số ký tự số trong mảng: " + a.length + "<br />");
+</script>
+</body>
+</html>
