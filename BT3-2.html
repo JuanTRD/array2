@@ -15,8 +15,13 @@ Chương trình này đếm số ký tự số trong mảng.<br>
     a[i] = prompt("nhập số thứ " + i);
   }
   document.write("Before :" + a + "<br />");
-
-  document.write("Số ký tự số trong mảng: " + a.length + "<br />");
+let count = 0;
+  for (let i = 0; i < a.length; i++) {
+      if (isNaN(a[i]) == false) {
+          count++;
+      }
+  }
+  document.write("Số ký tự số trong mảng: " + count + "<br />");
 </script>
 </body>
 </html>
